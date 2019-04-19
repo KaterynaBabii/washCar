@@ -1,0 +1,26 @@
+.app {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100vh;
+    // background-color: black;
+
+    .app_header {
+        flex: 0 1 auto;
+    }
+
+    .app_content {
+        // flex: 0 1 100%;
+        flex: 1;
+        
+    }
+
+    .app_footer {
+        // flex: 0 1 auto;
+        flex-shrink: 0;
+        // border:1px solid red;
+    }
+  
+}

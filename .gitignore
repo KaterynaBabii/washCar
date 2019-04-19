@@ -1,0 +1,13 @@
+# TELL GIT TO IGNORE STUFF
+# Doesn't work on anything already under version control.
+# https://git-scm.com/docs/gitignore
+
+# Styleguide
+styleguide
+
+# Ignore the following files and directories at any depth relative to the
+# directory this `.gitignore` file is currently located in.
+/dist/
+/node_modules/
+
+
