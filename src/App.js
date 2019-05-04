@@ -1,14 +1,12 @@
-import React, {Component, Fragment} from 'react';
-import Button from "./button/button";
 import styles from './styles/main.scss';
+import styl from './App.scss';
+
+import React, {Component, Fragment} from 'react';
 import FancyButton from "./fancy-button/fancy-button";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Spinner from "./components/Spinner/Spinner";
-import MapContainer from "./components/MapContainer/MapContainer";
-import Location from "./components/Location/Location";
-
-import styl from './App.scss';
+import LocationSection from './components/LocationSection/LocationSection'
 
 class App extends Component {
   render() {
@@ -17,15 +15,14 @@ class App extends Component {
         <header className={styl.app_header}>
           <Header/>
         </header>
-        <div className={styl.app_content}>
-        
-          {/* <Button label="Regular Button"/> */}
-          <Location />
-          {/* <FancyButton /> */}
 
-            {/* <MapContainer /> */}
-           
+        <div className={styl.app_content}>
+        <FancyButton />
+          {/* <Button label="Regular Button"/> */}
+          <LocationSection />
+          <FancyButton />           
         </div>
+
         <footer className={styl.app_footer}>
           <Footer />
         </footer>
@@ -35,6 +32,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-// М.Балабана 26

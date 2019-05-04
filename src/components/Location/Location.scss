@@ -1,0 +1,13 @@
+.location {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    .map {
+        flex: 2 0 0;
+    }
+
+    .adress {
+        flex: 1 0 0;
+    }
+}

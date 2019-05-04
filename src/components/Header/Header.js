@@ -13,7 +13,7 @@ class Header extends Component {
   render () {
 
     return (
-      <nav className="styles.header navbar navbar-inverse navbar-fixed-top">
+      <nav className="navbar navbar-inverse navbar-fixed-top">
         <div className="container-fluid">
           <div className="navbar-header">
             <a className="navbar-brand" href="#">WebSiteName</a>
