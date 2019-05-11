@@ -24,15 +24,6 @@ class FancyButton extends Component {
       <h1>Scroll this page to see the effect</h1>
       <h1>Scroll this page to see the effect</h1>
       <h1>Scroll this page to see the effect</h1>
-      
-      <h1>Scroll this page to see the effect</h1>
-      <h1>Scroll this page to see the effect</h1>
-      <h1>Scroll this page to see the effect</h1>
-      <h1>Scroll this page to see the effect</h1>
-      <h1>Scroll this page to see the effect</h1>
-      <h1>Scroll this page to see the effect</h1>
-      <h1>Scroll this page to see the effect</h1>
-      <h1>Scroll this page to see the effect</h1>
     </div>
     );
   }
