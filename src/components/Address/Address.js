@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
+import styles from './Address.scss';
 
+import React, {Component} from 'react';
 import MapContainer from "../MapContainer/MapContainer";
 import FancyButton from "../../fancy-button/fancy-button";
 
@@ -12,14 +13,14 @@ class Address extends Component {
   
     render () {
       return (
-        <div >
+        <div className={styles.address}>
             <h1>Автомийка</h1>
             <h4><b>Телефон:</b></h4>
             <p>2345566754323456</p>
             <h4><b>Адрес:</b></h4>
             <p>м. Львів</p>
             <p>М.Балабана 26</p>
-            
+           
         </div>
 
       );

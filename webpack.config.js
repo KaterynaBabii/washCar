@@ -38,7 +38,20 @@ module.exports = {
               localIdentName: '[local]___[hash:base64:5]'
             }
           },
+          
         'sass-loader',
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
         ]
       },
       {

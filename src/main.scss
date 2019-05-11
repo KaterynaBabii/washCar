@@ -1,7 +1,3 @@
-@import 'partials/variables';
-@import 'partials/mixins';
-@import 'partials/base';
-
 html, body {
     font-size: 14px;
   }
@@ -11,8 +7,4 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
-  p {
-    margin: 0;
-    line-height: 1;
   }

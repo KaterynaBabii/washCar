@@ -6,7 +6,9 @@ import FancyButton from "./fancy-button/fancy-button";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Spinner from "./components/Spinner/Spinner";
-import LocationSection from './components/LocationSection/LocationSection'
+import LocationSection from './components/LocationSection/LocationSection';
+import ServiceSection from './components/ServiceSection/ServiceSection';
+
 
 class App extends Component {
   render() {
@@ -19,8 +21,8 @@ class App extends Component {
         <div className={styl.app_content}>
         <FancyButton />
           {/* <Button label="Regular Button"/> */}
+          <ServiceSection />
           <LocationSection />
-          <FancyButton />           
         </div>
 
         <footer className={styl.app_footer}>
