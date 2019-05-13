@@ -13,15 +13,15 @@ var sectionStyle = {
 };
 
 class ServiceSection extends Component {
-    constructor (props) {
-      super(props);
+    constructor (...args) {
+      super(...args);
       this.state = {};
     }
   
     render () {
       return (
         <div style={ sectionStyle } className={styles.serviceSection}>
-            <div className="container">
+            <div id={this.props.id} className="container">
               <div className="row">
                 <h1 className='text-center'>ПОСЛУГИ</h1>
                 <Service />

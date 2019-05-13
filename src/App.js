@@ -18,9 +18,9 @@ class App extends Component {
         </header>
 
         <div className={styl.app_content}>
-        <FancyButton />
-s          <ServiceSection />
-          <LocationSection />
+          <FancyButton id="main"/>
+          <ServiceSection id="service"/>
+          <LocationSection id="location"/>
         </div>
 
         <footer className={styl.app_footer}>

@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
-// import styles from './fancy-button.scss'
 
-class FancyButton extends Component {
-  render() {
+export default function FancyButton ({id}){
+
     return (
-      <div className="container">
+      <div id={id} className="container">
       <h3>Fixed Navbar</h3>
       <div className="row">
         <div className="col-md-4">
@@ -27,6 +26,3 @@ class FancyButton extends Component {
     </div>
     );
   }
-}
-
-export default FancyButton;
