@@ -1,4 +1,4 @@
-import styles from './LocationSection.scss';
+import './LocationSection.scss';
 
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
@@ -12,7 +12,7 @@ class LocationSection extends Component {
   
     render () {
       return (
-        <div className={styles.locationSection}>
+        <div className="locationSection">
             <div className="container" id={this.props.id}>
               <div className="row">
               <br />

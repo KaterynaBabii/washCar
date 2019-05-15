@@ -1,4 +1,4 @@
-import styles from './Header.scss';
+import './Header.scss';
 
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';

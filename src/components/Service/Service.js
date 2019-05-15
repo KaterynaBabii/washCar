@@ -1,4 +1,4 @@
-import styles from './Service.scss';
+import './Service.scss';
 
 import React, {Component} from 'react';
 
@@ -13,7 +13,7 @@ class Service extends Component {
         <div>
             <div className="row">
                 <div className="col-xs-12 col-sm-6">
-                    <div className={styles.service}>
+                    <div className="service">
                       <h3 className='text-center'>Комплексна мийка легкового авто</h3>
                       <p>Vacuum and hand wash</p>
                       <p>Hand dry w 'micro-fiber' towels</p>
@@ -26,7 +26,7 @@ class Service extends Component {
                 </div>
                 
                 <div className="col-xs-12 col-sm-6">
-                  <div className={styles.service}>
+                  <div className="service">
                     <h3 className='text-center'>Комплексна мийка кросовера </h3>
                     <p>Хімчистка салону авто</p>
                     <p>Hand dry w 'micro-fiber' towels</p>
@@ -38,7 +38,7 @@ class Service extends Component {
 
             <div className="row">
                 <div className="col-xs-12 col-sm-6">
-                    <div className={styles.service}>
+                  <div className="service">
                       <h3 className='text-center'>Хімчистка килимів</h3>
                       <p>Професійна сучасна 3х-етапна чистка та сушка килимів.
                         Килими чисті та дезинфіковані. Безпечна - німецька сертифікована хімія.
@@ -49,7 +49,7 @@ class Service extends Component {
                 </div>
                 
                 <div className="col-xs-12 col-sm-6">
-                  <div className={styles.service}>
+                  <div className="service">
                     <h3 className='text-center'>Додаткові послуги</h3>
                     <p>Vacuum and hand wash</p>
                     <p>Hand dry w 'micro-fiber' towels</p>

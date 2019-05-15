@@ -1,4 +1,4 @@
-import styles from './ServiceSection.scss';
+import './ServiceSection.scss';
 
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
@@ -20,7 +20,7 @@ class ServiceSection extends Component {
   
     render () {
       return (
-        <div style={ sectionStyle } className={styles.serviceSection}>
+        <div style={ sectionStyle } className="serviceSection">
             <div id={this.props.id} className="container">
               <div className="row">
                 <h1 className='text-center'>ПОСЛУГИ</h1>

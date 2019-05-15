@@ -1,4 +1,4 @@
-import styles from './Address.scss';
+import './Address.scss';
 
 import React, {Component} from 'react';
 import MapContainer from "../MapContainer/MapContainer";
@@ -13,7 +13,7 @@ class Address extends Component {
   
     render () {
       return (
-        <div className={styles.address}>
+        <div className="address">
             <h1>Автомийка</h1>
             <h4><b>Телефон:</b></h4>
             <p>2345566754323456</p>

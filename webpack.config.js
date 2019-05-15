@@ -24,23 +24,43 @@ module.exports = {
           loader: 'babel-loader'
         }
       },
+      // {
+      //   test: /\.(scss|sass|css)$/,
+      //   exclude: /node_modules/,
+      //   loaders: [
+      //     MiniCssExtractPlugin.loader,
+      //     {
+      //       loader: 'css-loader',
+      //       options: {
+      //         modules: true,
+      //         sourceMap: true,
+      //         importLoaders: 1,
+      //         localIdentName: '[local]___[hash:base64:5]'
+      //       }
+      //     },
+      //   'sass-loader',
+      //   ],
+      //   // fallback: "style-loader"
+      // },
       {
-        test: /\.(scss|sass|css)$/,
-        exclude: /node_modules/,
-        loaders: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              sourceMap: true,
-              importLoaders: 1,
-              localIdentName: '[local]___[hash:base64:5]'
+        test: /\.(scss)$/,
+        use: [{
+          loader: 'style-loader', // inject CSS to page
+        }, {
+          loader: 'css-loader', // translates CSS into CommonJS modules
+        }, {
+          loader: 'postcss-loader', // Run post css actions
+          options: {
+            plugins: function () { // post css plugins, can be exported to postcss.config.js
+              return [
+                require('precss'),
+                require('autoprefixer')
+              ];
             }
-          },
-          
-        'sass-loader',
-        ]
+          }
+        }, {
+          loader: 'sass-loader' // compiles Sass to CSS
+        }]
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -49,7 +69,8 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 8192
+              limit: 8192,
+              name: '[path][name]-[hash:8].[ext]'
             }
           }
         ]

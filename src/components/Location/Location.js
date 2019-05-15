@@ -1,4 +1,4 @@
-import styles from './Location.scss';
+import './Location.scss';
 
 import React, {Component} from 'react';
 
@@ -17,11 +17,11 @@ class Location extends Component {
   
     render () {
       return (
-        <div className={styles.location}>
-              <div className={styles.map}>
+        <div className="location">
+              <div className="map">
                 <MapContainer/>
               </div>
-              <div className={styles.adress}> 
+              <div className="adress"> 
                 <div >
                 <Address />
                 </div>
