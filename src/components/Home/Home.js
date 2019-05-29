@@ -2,8 +2,7 @@ import './Home.scss';
 
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Background from 'C:/Users/asus/Desktop/pasha/washCarService/src/images/car.jpg';
-import Background1 from 'C:/Users/asus/Desktop/pasha/washCarService/src/images/car1.jpg';
+import Background from 'C:/Users/asus/Desktop/pasha/washCarService/src/images/drop.jpg';
 import {Carousel, Item, Caption} from 'react-bootstrap';
 
 
@@ -28,7 +27,7 @@ class Home extends Component {
     
       render() {
         const { index, direction } = this.state;
-    
+        
         return (
           <Carousel
             activeIndex={index}
@@ -37,39 +36,50 @@ class Home extends Component {
           >
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="caroselImg d-block w-100"
                 src={Background}
                 alt="First slide"
               />
               <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <div className="row">
+                <div className="col-xs-12 col-sm-6">
+                  
+                </div>
+                <div className="col-xs-12 col-sm-6">
+                  <h3>м. Львів</h3>
+                  <h3>М.Балабана 26</h3>
+                  <br/>
+                  <h5>Графік роботи:</h5>
+                  <h5>9:00 - 00:00</h5>
+                  <h5>Без вихідних</h5>
+                  <br/>
+                  <h3>+380638892716</h3>
+                  <br/><br/>
+                </div>
+              </div>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="caroselImg d-block w-100"
                 src={Background}
                 alt="Third slide"
               />
     
               <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={Background}
-                alt="Third slide"
-              />
-    
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                </p>
+              <div className="row">
+                <div className="col-xs-12 col-sm-6">
+
+                </div>
+                <div className="col-xs-12 col-sm-6">
+                  <h3>S.P.A Auto</h3>
+                  <p className='desc'>Щоб до нас потрапити потрібно рухатися 
+                  по вул. Джерельна, після візового центру VFS Global 
+                  перший поворот на ліво на вул. Маєра Балабана, 26.
+                  Проїхати 30 км., повернути на ліво (паркінг).
+                  Ви на місці!</p>
+                </div>
+              </div>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>

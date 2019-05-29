@@ -17,16 +17,16 @@ class Location extends Component {
   
     render () {
       return (
-        <div className="location">
-              <div className="map">
-                <MapContainer/>
-              </div>
-              <div className="adress"> 
-                <div >
-                <Address />
-                </div>
-          </div>
-        </div>
+
+    <div className="location row" id={this.props.id}>
+    
+    <div className="map col-xs-12 col-sm-8">
+      <MapContainer/>
+    </div>
+    <div className="adress col-xs-12 col-sm-4">
+      <Address />
+    </div>
+    </div>
       );
     }
   }

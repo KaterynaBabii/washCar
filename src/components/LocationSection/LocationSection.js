@@ -13,14 +13,12 @@ class LocationSection extends Component {
     render () {
       return (
         <div className="locationSection">
-            <div className="container" id={this.props.id}>
-              <div className="row">
-              <br />
-                <h1 className='text-center'>ЯК НАС ЗНАЙТИ?</h1>
-                <br />
+          <h1 className="locat text-center">ЯК НАС ЗНАЙТИ?</h1>
+          <div id={this.props.id} className="container"> 
+              <div className="col-xs-12 col-sm-12">
                 <Location  />
               </div>
-            </div>
+          </div>
           </div>
       );
     }

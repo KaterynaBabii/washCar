@@ -1,8 +1,11 @@
 .serviceSection {
     background-attachment: fixed;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 
-    h1 {
+    .service h1{
         color: white;
+        background: rgba(0, 0, 0, .8);
     }
 }
