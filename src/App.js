@@ -4,7 +4,6 @@ import './App.scss';
 import React, {Component, Fragment} from 'react';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Spinner from "./components/Spinner/Spinner";
 import LocationSection from './components/LocationSection/LocationSection';
 import ServiceSection from './components/ServiceSection/ServiceSection';
 import Home from './components/Home/Home';
