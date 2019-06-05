@@ -2,7 +2,9 @@ import './Home.scss';
 
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Background from 'C:/Users/asus/Desktop/pasha/washCarService/src/images/drop.jpg';
+import Background from '../../images/drop.jpg';
+import car from '../../images/carwash.jpg';
+
 import {Carousel, Item, Caption} from 'react-bootstrap';
 
 
@@ -27,23 +29,21 @@ class Home extends Component {
     
       render() {
         const { index, direction } = this.state;
-        
         return (
+          <div id={this.props.id}>
           <Carousel
             activeIndex={index}
             direction={direction}
-            onSelect={this.handleSelect}
-          >
+            onSelect={this.handleSelect} >
             <Carousel.Item>
               <img
                 className="caroselImg d-block w-100"
                 src={Background}
-                alt="First slide"
-              />
+                alt="First slide" />
               <Carousel.Caption>
               <div className="row">
                 <div className="col-xs-12 col-sm-6">
-                  
+                <img  className="carWash d-block w-100" src={car} alt="First slide" />
                 </div>
                 <div className="col-xs-12 col-sm-6">
                   <h3>м. Львів</h3>
@@ -63,13 +63,13 @@ class Home extends Component {
               <img
                 className="caroselImg d-block w-100"
                 src={Background}
-                alt="Third slide"
+                alt="Second slide"
               />
     
               <Carousel.Caption>
               <div className="row">
                 <div className="col-xs-12 col-sm-6">
-
+                <img  className="carWash d-block w-100" src={car} alt="First slide" />
                 </div>
                 <div className="col-xs-12 col-sm-6">
                   <h3>S.P.A Auto</h3>
@@ -83,6 +83,7 @@ class Home extends Component {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
+          </div>
         );
       }
     }

@@ -8,27 +8,62 @@ const mapStyles = {
 
 
 export class MapContainer extends Component {
+  constructor (props) {
+    super(props);
+    
+    this.state = {
+      showingInfoWindow: false,
+      activeMarker: {},
+      selectedPlace: {}
+    };
+    this.onMarkerClick = this.onMarkerClick.bind(this);
+    this.onClose = this.onClose.bind(this)
+  }
+ 
+
+  onMarkerClick (props, marker, e) {
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+  }
+    
+
+  onClose (props) {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      });
+    }
+  };
+
     render() {
       return (
-        <Map
-        google={this.props.google}
-        zoom={14}
-        style={mapStyles}
-        initialCenter={{
-         lat: 49.8464244,
-         lng: 24.024062
-        }}
-      >
-   
-          <Marker onClick={this.onMarkerClick}
-                  name={'Current location'} />
-   
-          <InfoWindow onClose={this.onInfoWindowClose}>
-              <div>
-                <h1>Lalla</h1>
-              </div>
+          <Map
+            google={this.props.google}
+            zoom={14}
+            style={mapStyles}
+            initialCenter={{
+            lat: 49.847084,
+            lng: 24.021313
+          }}
+          >
+          <Marker
+            onClick={this.onMarkerClick}
+            name={'S.P.A Auto'}
+          />
+          <InfoWindow
+            marker={this.state.activeMarker}
+            visible={this.state.showingInfoWindow}
+            onClose={this.onClose}
+          >
+            <div>
+              <h5>{this.state.selectedPlace.name}</h5>
+            </div>
           </InfoWindow>
-        </Map>
+          </Map>
       );
     }
   }
