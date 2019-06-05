@@ -1,20 +1,31 @@
-.carousel-caption { 
-    top: 25%;  
-    bottom: auto;
-    background: rgba(0, 0, 0, .5);
+.carousel-section {
     
-}
+    .carousel-caption { 
+        top: 25%;  
+        bottom: auto;
+        background: rgba(0, 0, 0, .5);
+        padding: 50px 10px;
+    }
 
-.desc {
-    line-height: 1.6;
-    font-size: 18px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-}
-.carWash {
-    border-radius: 50%;
-    position:absolute;
-    top:0;
-    bottom:0;
-    margin:auto;
+    .desc {
+        text-align: justify;
+    }
+
+    .desc p {
+        line-height: 1.6;
+        font-size: 18px;
+    }
+
+    .phone-num {
+       color: white;
+       font-size: 20px;
+    }
+
+    .carWash {
+        border-radius: 50%;
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
+    }
 }

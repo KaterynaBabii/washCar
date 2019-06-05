@@ -1,13 +1,11 @@
 import './LocationSection.scss';
 
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import Location from "../Location/Location";
 
 class LocationSection extends Component {
     constructor (...args) {
       super(...args);
-      this.state = {};
     }
   
     render () {
@@ -19,7 +17,7 @@ class LocationSection extends Component {
                 <Location  />
               </div>
           </div>
-          </div>
+        </div>
       );
     }
   }

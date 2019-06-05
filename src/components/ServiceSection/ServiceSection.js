@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Service from "../Service/Service";
 //TODO
-import Background from 'C:/Users/asus/Desktop/pasha/washCarService/src/images/test1.jpg';
+import Background from '../../images/paral-B.jpg';
 
 var sectionStyle = {
   width: "100%",
@@ -15,7 +15,6 @@ var sectionStyle = {
 class ServiceSection extends Component {
     constructor (...args) {
       super(...args);
-      this.state = {};
     }
   
     render () {

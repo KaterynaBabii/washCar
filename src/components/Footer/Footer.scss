@@ -1,5 +1,5 @@
 .footer {
-    background-color: black;
+    background-color: #000000;
     padding: 10px 0;
     width: 100%;
     z-index: 10;
@@ -16,12 +16,21 @@
         display: flex;
         align-self: center;
         margin-right: 10px;
-        color:white;
+        color:#ffffff;
         font-size: 12px;
     }
 
     .logo {
-        color:white;
+        color:#ffffff;
         font-size: 18px;
+    }
+    
+    .insta {
+        font-size: 18px;
+        margin-bottom: -5px;
+    }
+
+    .insta i {
+        color: hotpink;
     }
 }
