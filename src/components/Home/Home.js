@@ -2,7 +2,7 @@ import './Home.scss';
 
 import React, {Component} from 'react';
 import Background from '../../images/drop.jpg';
-import car from '../../images/carwash.jpg';
+import car from '../../images/car.jpg';
 
 import {Carousel, Item, Caption} from 'react-bootstrap';
 
@@ -43,7 +43,7 @@ class Home extends Component {
                 </div>
                 <div className="col-xs-12 col-sm-6 desc">
                   <h3>м. Львів</h3>
-                  <h3>М.Балабана 26</h3>
+                  <h3>М. Балабана 26</h3>
                   <div className="">
                     <p>Графік роботи:</p>
                     <p>9:00 - 00:00</p>

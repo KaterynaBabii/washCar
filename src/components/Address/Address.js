@@ -4,7 +4,7 @@ import React from 'react';
 
 const Address = () => (
   <div className="address">
-      <h3>S.P.A Auto</h3>
+      <h3>S.P.A. Auto</h3>
       <p>
         Щоб до нас потрапити потрібно рухатися по вул. Джерельна, 
         після візового центру VFS Global перший поворот на 
