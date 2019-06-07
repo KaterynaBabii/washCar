@@ -11,7 +11,8 @@ module.exports = {
     SRC_DIR + '/index.js'
   ],
   output: {
-    path: DIST_DIR,
+    // path: DIST_DIR,
+    path: '/',
     publicPath: '/',
     filename: 'bundle.js'
   },
