@@ -1,11 +1,14 @@
 {
   "name": "wash-car",
   "version": "1.0.0",
+  "homepage": "https://katerynababii.github.io/spa.auto/",
   "description": "Wash Car",
   "scripts": {
     "build": "./node_modules/.bin/webpack -p --mode production",
     "start": "./node_modules/.bin/webpack-dev-server --open --config ./webpack.config.js --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "license": "",
   "devDependencies": {
