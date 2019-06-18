@@ -7,7 +7,7 @@ styleguide
 
 # Ignore the following files and directories at any depth relative to the
 # directory this `.gitignore` file is currently located in.
-/dist/
+#  /dist/
 /node_modules/
 
 
